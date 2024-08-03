@@ -1,0 +1,40 @@
+.main-features {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+  }
+  
+  .main-features h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    max-width: 300px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .feature-icon {
+    margin-bottom: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+    color: #555;
+  }
+  

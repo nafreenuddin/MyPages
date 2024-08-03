@@ -1,0 +1,114 @@
+.login {
+    --login-primary-color: #2c3e50;
+    --login-secondary-color: #34495e;
+    --login-accent-color: #e74c3c;
+    --login-text-color: #333;
+    --login-background-color: #ecf0f1;
+  }
+  
+  .login__container {
+    max-width: 400px;
+    margin: 5% auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .login__container:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login__title {
+    text-align: center;
+    color: var(--login-primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .login__subtitle {
+    text-align: center;
+    color: var(--login-secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  
+  .login__form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login__input {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--login-secondary-color);
+    background-color: transparent;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .login__input:focus {
+    outline: none;
+    border-bottom-color: var(--login-accent-color);
+  }
+  
+  .login__input::placeholder {
+    color: #95a5a6;
+  }
+  
+  .login__button {
+    padding: 1rem;
+    background-color: var(--login-accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login__button:hover {
+    background-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .login__error {
+    color: var(--login-accent-color);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  
+  @keyframes loginFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .login__container > * {
+    animation: loginFadeIn 0.5s ease-out forwards;
+  }
+  
+  @media (max-width: 480px) {
+    .login__container {
+      margin: 10% 5%;
+      padding: 2rem;
+    }
+  
+    .login__title {
+      font-size: 2rem;
+    }
+  
+    .login__subtitle {
+      font-size: 1.5rem;
+    }
+  }
